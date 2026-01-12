@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Delegating | Solvenza Solutions</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Solvenza Solutions<span style="color: var(--color-gold);">.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link">About Us</a></li>
+                    <li><a href="#" class="nav-link">Our Services</a></li>
+                    <li><a href="#" class="nav-link">Pricing</a></li>
+                    <li><a href="#" class="nav-link">Careers</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn btn-primary">Start Delegating</a>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="container" style="padding-top: 120px; padding-bottom: 80px;">
+        <div class="contact-form-container">
+            <div class="form-header" style="text-align: center; margin-bottom: 48px;">
+                <h2>Automate Your Growth</h2>
+                <p style="color: var(--color-text-muted); max-width: 600px; margin: 16px auto 0;">
+                    Tell us about your needs, and we'll design a custom AI-augmented staffing solution for you.
+                </p>
+            </div>
+
+            <form id="leadForm">
+                <div class="form-grid">
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label class="form-label">Full Name *</label>
+                        <input type="text" class="form-input" placeholder="Jane Doe" required>
+                    </div>
+
+                    <!-- Work Email -->
+                    <div class="form-group">
+                        <label class="form-label">Work Email *</label>
+                        <input type="email" class="form-input" placeholder="jane@company.com" required>
+                    </div>
+
+                    <!-- Company Name -->
+                    <div class="form-group">
+                        <label class="form-label">Company Name *</label>
+                        <input type="text" class="form-input" placeholder="Acme Corp" required>
+                    </div>
+
+                    <!-- Niche -->
+                    <div class="form-group">
+                        <label class="form-label">Niche *</label>
+                        <input type="text" class="form-input" placeholder="e.g. SaaS, Real Estate" required>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="form-group full-width">
+                        <label class="form-label">Phone Number *</label>
+                        <div style="display: flex; gap: 12px;">
+                            <select class="form-select" style="width: 120px;">
+                                <option value="+1">🇺🇸 +1</option>
+                                <option value="+44">🇬🇧 +44</option>
+                                <option value="+61">🇦🇺 +61</option>
+                                <option value="+1">🇨🇦 +1</option>
+                            </select>
+                            <input type="tel" class="form-input" placeholder="(555) 123-4567" required>
+                        </div>
+                    </div>
+
+                    <!-- Slider: Number of VAs -->
+                    <div class="form-group full-width">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <label class="form-label" style="margin-bottom: 0;">Number of VAs needed: *</label>
+                            <span id="vaCountDisplay" style="font-weight: 700; color: var(--color-charcoal);">1</span>
+                        </div>
+                        <div class="slider-container">
+                            <input type="range" class="slider-input" min="1" max="10" value="1" id="vaSlider">
+                        </div>
+                    </div>
+
+                    <!-- Priority Selection -->
+                    <div class="form-group full-width">
+                        <label class="form-label">What's your priority?</label>
+                        <div class="toggle-group">
+                            <label class="toggle-option">
+                                <input type="radio" name="priority" value="part-time">
+                                <span class="toggle-label">Part-Time</span>
+                            </label>
+                            <label class="toggle-option">
+                                <input type="radio" name="priority" value="full-time" checked>
+                                <span class="toggle-label">Full-Time</span>
+                            </label>
+                            <label class="toggle-option">
+                                <input type="radio" name="priority" value="tailored">
+                                <span class="toggle-label">Tailored</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Checkboxes: Support Needs -->
+                    <div class="form-group full-width">
+                        <label class="form-label">What do you need support with?</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox"> Admin General
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox"> Customer Support
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox"> Marketing
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox"> E-Commerce
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox"> Real Estate
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox"> Other
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Text Area -->
+                    <div class="form-group full-width">
+                        <label class="form-label">Message / Specific Needs</label>
+                        <textarea class="form-textarea" rows="4" placeholder="This field is optional"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group full-width" style="margin-top: 16px;">
+                        <button type="submit" class="btn btn-submit">Automate My Growth</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="footer-logo">Solvenza Solutions.</a>
+                <ul class="footer-nav">
+                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="services.html" class="footer-link">Our Services</a></li>
+                    <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                    <li><a href="careers.html" class="footer-link">Careers</a></li>
+                </ul>
+                <div class="footer-socials">
+                    <a href="#"><i data-feather="linkedin" class="social-icon"></i></a>
+                    <a href="#"><i data-feather="instagram" class="social-icon"></i></a>
+                    <a href="#"><i data-feather="mail" class="social-icon"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Solvenza Solutions. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
