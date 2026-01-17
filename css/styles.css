@@ -1706,7 +1706,10 @@ footer {
 
 .footer-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    /* Left Align */
+    gap: 80px;
+    /* Spacing between logo, nav, socials */
     align-items: center;
     padding-bottom: 40px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
