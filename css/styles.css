@@ -1751,6 +1751,8 @@ footer {
 .footer-socials {
     display: flex;
     gap: 20px;
+    margin-left: auto;
+    /* Push to right */
 }
 
 .social-icon {
