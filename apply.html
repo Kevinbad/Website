@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now | Solvenza Solutions Careers</title>
+    <meta name="description"
+        content="Join the elite. Apply for remote roles at Solvenza Solutions and accelerate your career.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://solvenza.com/apply.html">
+    <meta property="og:title" content="Apply Now | Solvenza Solutions">
+    <meta property="og:description"
+        content="Join the elite. Apply for remote roles at Solvenza Solutions and accelerate your career.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Solvenza Solutions"></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link">Our Services</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="careers.html" class="nav-link">Careers</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <i data-feather="menu"></i>
+            </div>
+
+            <a href="contact.html" class="btn btn-primary">Start Delegating</a>
+        </div>
+    </header>
+
+    <!-- Application Form Section -->
+    <section class="container" style="padding-top: 120px; padding-bottom: 80px;">
+        <div class="contact-form-container">
+            <div class="form-header" style="text-align: center; margin-bottom: 48px;">
+                <h2>Join the Elite</h2>
+                <p style="color: var(--color-text-muted); max-width: 600px; margin: 16px auto 0;">
+                    We are looking for ambitious, bilingual professionals. Show us what you've got.
+                </p>
+            </div>
+
+            <form id="applicationForm" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="08df60a9-1ee9-485a-926f-83b4d062a2ff">
+                <!-- Optional: Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <div class="form-grid">
+                    <!-- Full Name -->
+                    <div class="form-group">
+                        <label class="form-label">Full Name *</label>
+                        <input type="text" name="candidate_name" class="form-input" placeholder="Your Name" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label class="form-label">Email Address *</label>
+                        <input type="email" name="candidate_email" class="form-input" placeholder="you@example.com"
+                            required>
+                    </div>
+
+                    <!-- LinkedIn Profile -->
+                    <div class="form-group full-width">
+                        <label class="form-label">LinkedIn Profile URL *</label>
+                        <input type="url" name="linkedin_url" class="form-input"
+                            placeholder="https://linkedin.com/in/yourprofile" required>
+                    </div>
+
+                    <!-- Role Selection -->
+                    <div class="form-group full-width">
+                        <label class="form-label">Position Applying For *</label>
+                        <select class="form-select" name="role_applying" required style="width: 100%;">
+                            <option value="">Select a role...</option>
+                            <option value="Backoffice Assistant">Backoffice Assistant</option>
+                            <option value="Cold Caller / SDR">Cold Caller / SDR</option>
+                            <option value="Operations Specialist">Operations Specialist</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Why Solvenza? -->
+                    <div class="form-group full-width">
+                        <label class="form-label">Why Solvenza? (Cover Letter)</label>
+                        <textarea class="form-textarea" name="cover_letter" rows="5"
+                            placeholder="Tell us why you are a good fit..."></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group full-width" style="margin-top: 16px;">
+                        <button type="submit" class="btn btn-submit">Submit Application</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="footer-logo">Solvenza Solutions.</a>
+                <ul class="footer-nav">
+                    <li><a href="about.html" class="footer-link">About Us</a></li>
+                    <li><a href="services.html" class="footer-link">Our Services</a></li>
+                    <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                    <li><a href="careers.html" class="footer-link">Careers</a></li>
+                </ul>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/company/solvenza-solutions/" target="_blank"><i
+                            data-feather="linkedin" class="social-icon"></i></a>
+                    <a href="#"><i data-feather="instagram" class="social-icon"></i></a>
+                    <a href="#"><i data-feather="mail" class="social-icon"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Solvenza Solutions. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

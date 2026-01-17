@@ -5,6 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers & Talent | Solvenza Solutions</title>
+    <meta name="description"
+        content="Join the top 1% of Latin American talent. Work with US companies, earn competitive USD salaries, and grow with AI-curriculum training.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://solvenza.com/careers.html">
+    <meta property="og:title" content="Careers & Talent | Solvenza Solutions">
+    <meta property="og:description"
+        content="Join the top 1% of Latin American talent. Work with US companies and earn competitive USD salaries.">
+    <meta property="og:image" content="https://solvenza.com/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://solvenza.com/careers.html">
+    <meta property="twitter:title" content="Careers & Talent | Solvenza Solutions">
+    <meta property="twitter:description"
+        content="Join the top 1% of Latin American talent. Work with US companies and earn competitive USD salaries.">
+    <meta property="twitter:image" content="https://solvenza.com/img/og-image.jpg">
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -18,15 +37,19 @@
     <!-- Header -->
     <header>
         <div class="container nav-container">
-            <a href="index.html" class="logo">Solvenza Solutions<span style="color: var(--color-gold);">.</span></a>
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Solvenza Solutions"></a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#" class="nav-link">About Us</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
                     <li><a href="services.html" class="nav-link">Our Services</a></li>
                     <li><a href="pricing.html" class="nav-link">Pricing</a></li>
                     <li><a href="careers.html" class="nav-link active">Careers</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <i data-feather="menu"></i>
+            </div>
+
             <a href="contact.html" class="btn btn-primary">Start Delegating</a>
         </div>
     </header>
@@ -119,42 +142,47 @@
     </section>
 
     <!-- Section 4: Open Roles -->
-    <section class="roles-section" id="open-roles">
+    <section class="roles-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Open Roles</h2>
-            </div>
+            <h2 style="text-align: center; margin-bottom: 60px;">Open Positions</h2>
             <div class="roles-grid">
-                <!-- Card 1 -->
-                <div class="role-card">
-                    <h3>Operations & Admin</h3>
+
+                <!-- Role 1: Backoffice Assistant -->
+                <div class="role-card reveal">
+                    <h3>Backoffice Assistant</h3>
                     <ul class="role-list">
-                        <li><i data-feather="check-circle"></i> Executive Assistants</li>
-                        <li><i data-feather="check-circle"></i> Project Coordinators</li>
-                        <li><i data-feather="check-circle"></i> Operations Managers</li>
+                        <li><i data-feather="check"></i> Email & Calendar Management</li>
+                        <li><i data-feather="check"></i> Data Entry & CRM Hygiene</li>
+                        <li><i data-feather="check"></i> Research & Reporting</li>
+                        <li><i data-feather="check"></i> C1/C2 English Required</li>
                     </ul>
-                    <a href="#" class="btn-text">View Details &rarr;</a>
+                    <a href="apply.html" class="btn btn-primary" style="width: 100%; text-align: center;">Apply Now</a>
                 </div>
-                <!-- Card 2 -->
-                <div class="role-card">
-                    <h3>Growth & Sales</h3>
+
+                <!-- Role 2: Cold Caller / SDR -->
+                <div class="role-card reveal delay-100">
+                    <h3>Cold Caller / SDR</h3>
                     <ul class="role-list">
-                        <li><i data-feather="check-circle"></i> SDRs/Setters</li>
-                        <li><i data-feather="check-circle"></i> CRM Managers</li>
-                        <li><i data-feather="check-circle"></i> Lead Generation Specialists</li>
+                        <li><i data-feather="check"></i> Outbound Prospecting</li>
+                        <li><i data-feather="check"></i> Appointment Setting</li>
+                        <li><i data-feather="check"></i> Objection Handling</li>
+                        <li><i data-feather="check"></i> High Energy & Resilience</li>
                     </ul>
-                    <a href="#" class="btn-text">View Details &rarr;</a>
+                    <a href="apply.html" class="btn btn-primary" style="width: 100%; text-align: center;">Apply Now</a>
                 </div>
-                <!-- Card 3 -->
-                <div class="role-card">
-                    <h3>Specialized Tech</h3>
+
+                <!-- Role 3: Operations Specialist -->
+                <div class="role-card reveal delay-200">
+                    <h3>Operations Specialist</h3>
                     <ul class="role-list">
-                        <li><i data-feather="check-circle"></i> Automation Architects</li>
-                        <li><i data-feather="check-circle"></i> Data Analysts</li>
-                        <li><i data-feather="check-circle"></i> Legal Assistants</li>
+                        <li><i data-feather="check"></i> Process Documentation (SOPs)</li>
+                        <li><i data-feather="check"></i> Project Management (Asana/ClickUp)</li>
+                        <li><i data-feather="check"></i> Workflow Automation</li>
+                        <li><i data-feather="check"></i> Analytical Mindset</li>
                     </ul>
-                    <a href="#" class="btn-text">View Details &rarr;</a>
+                    <a href="apply.html" class="btn btn-primary" style="width: 100%; text-align: center;">Apply Now</a>
                 </div>
+
             </div>
         </div>
     </section>
@@ -198,13 +226,14 @@
             <div class="footer-top">
                 <a href="index.html" class="footer-logo">Solvenza Solutions.</a>
                 <ul class="footer-nav">
-                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="about.html" class="footer-link">About Us</a></li>
                     <li><a href="services.html" class="footer-link">Our Services</a></li>
                     <li><a href="pricing.html" class="footer-link">Pricing</a></li>
                     <li><a href="careers.html" class="footer-link">Careers</a></li>
                 </ul>
                 <div class="footer-socials">
-                    <a href="#"><i data-feather="linkedin" class="social-icon"></i></a>
+                    <a href="https://www.linkedin.com/company/solvenza-solutions/" target="_blank"><i
+                            data-feather="linkedin" class="social-icon"></i></a>
                     <a href="#"><i data-feather="instagram" class="social-icon"></i></a>
                     <a href="#"><i data-feather="mail" class="social-icon"></i></a>
                 </div>

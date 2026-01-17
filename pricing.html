@@ -5,6 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing & Plans | Solvenza Solutions</title>
+    <meta name="description"
+        content="Transparent pricing for elite bilingual talent. Save 70% on operating costs with our simple monthly subscription model.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://solvenza.com/pricing.html">
+    <meta property="og:title" content="Pricing & Plans | Solvenza Solutions">
+    <meta property="og:description"
+        content="Transparent pricing for elite bilingual talent. Save 70% on operating costs.">
+    <meta property="og:image" content="https://solvenza.com/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://solvenza.com/pricing.html">
+    <meta property="twitter:title" content="Pricing & Plans | Solvenza Solutions">
+    <meta property="twitter:description"
+        content="Transparent pricing for elite bilingual talent. Save 70% on operating costs.">
+    <meta property="twitter:image" content="https://solvenza.com/img/og-image.jpg">
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -18,15 +37,19 @@
     <!-- Header -->
     <header>
         <div class="container nav-container">
-            <a href="index.html" class="logo">Solvenza Solutions<span style="color: var(--color-gold);">.</span></a>
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Solvenza Solutions"></a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#" class="nav-link">About Us</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
                     <li><a href="services.html" class="nav-link">Our Services</a></li>
                     <li><a href="pricing.html" class="nav-link active">Pricing</a></li>
-                    <li><a href="#" class="nav-link">Careers</a></li>
+                    <li><a href="careers.html" class="nav-link">Careers</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <i data-feather="menu"></i>
+            </div>
+
             <a href="contact.html" class="btn btn-primary">Start Delegating</a>
         </div>
     </header>
@@ -110,15 +133,96 @@
         </div>
     </section>
 
-    <!-- Section 2: Social Proof -->
+    <!-- Section 2: Social Proof (Carousel) -->
     <section class="quote-section">
-        <div class="container quote-container">
-            <h2>ROI realized in weeks, not months.</h2>
-            <blockquote>
-                "Solvenza didn't just find us a VA; they installed an operational system. Our output doubled while our
-                costs dropped by 60%."
-            </blockquote>
-            <cite>- Mark T., CEO of FinTech Global</cite>
+        <div class="container roi-showcase">
+
+            <!-- Left: Carousel Content -->
+            <div class="roi-content testimonial-carousel">
+
+                <!-- Slide 1 -->
+                <div class="testimonial-slide active">
+                    <h2>ROI realized in weeks.</h2>
+                    <blockquote>
+                        "Solvenza resolved our complex payroll bottlenecks and streamlined recruiting. Efficiency
+                        improved by 40%."
+                    </blockquote>
+                    <cite>
+                        <div class="author-info">
+                            <strong>Neil Dallas</strong>
+                            <span>CEO, Capstone Insurance Group</span>
+                        </div>
+                    </cite>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="testimonial-slide">
+                    <h2>Seamless Compliance.</h2>
+                    <blockquote>
+                        "Managing global contractor payments used to be a nightmare. Solvenza's compliance engine made
+                        it effortless."
+                    </blockquote>
+                    <cite>
+                        <div class="author-info">
+                            <strong>Tristen Forgett</strong>
+                            <span>COO, Diversity Group</span>
+                        </div>
+                    </cite>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="testimonial-slide">
+                    <h2>Perfect Synchornization.</h2>
+                    <blockquote>
+                        "Perfect synchronization with our US operations. Their payroll solution is accurate, timely, and
+                        transparent."
+                    </blockquote>
+                    <cite>
+                        <div class="author-info">
+                            <strong>Simón Escalona</strong>
+                            <span>Director, Flex Global</span>
+                        </div>
+                    </cite>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="testimonial-slide">
+                    <h2>Strategic Cost Savings.</h2>
+                    <blockquote>
+                        "We cut operational costs while upgrading our talent pool. The payroll transparency gave us
+                        total peace of mind."
+                    </blockquote>
+                    <cite>
+                        <div class="author-info">
+                            <strong>Hardy Zapata</strong>
+                            <span>Partner, GMG Advisors</span>
+                        </div>
+                    </cite>
+                </div>
+
+                <!-- Dots Navigation -->
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                </div>
+
+            </div>
+
+            <!-- Right: Metrics (Static for now, matches general sentiment) -->
+            <div class="roi-visuals">
+                <div class="metric-card up">
+                    <span class="metric-val">40%</span>
+                    <span class="metric-label">Efficiency Boost</span>
+                    <i data-feather="zap" class="metric-icon"></i>
+                </div>
+                <div class="metric-card down">
+                    <span class="metric-val">0</span>
+                    <span class="metric-label">Compliance Errors</span>
+                    <i data-feather="check-circle" class="metric-icon"></i>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -127,9 +231,8 @@
         <div class="container audit-grid">
             <div class="audit-image">
                 <!-- Placeholder for "Two professional women with SCALE NOW newspaper" -->
-                <div class="placeholder-audit-img" style="background: #e2e8f0; position: relative; overflow: hidden;">
-                    <span style="color: #64748b; font-weight: bold;">[Image: Two Women with "SCALE NOW"
-                        Newspaper]</span>
+                <div class="placeholder-audit-img" style="position: relative; overflow: hidden;">
+
                 </div>
             </div>
             <div class="audit-content">
@@ -150,13 +253,14 @@
             <div class="footer-top">
                 <a href="index.html" class="footer-logo">Solvenza Solutions.</a>
                 <ul class="footer-nav">
-                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="about.html" class="footer-link">About Us</a></li>
                     <li><a href="services.html" class="footer-link">Our Services</a></li>
                     <li><a href="pricing.html" class="footer-link">Pricing</a></li>
                     <li><a href="careers.html" class="footer-link">Careers</a></li>
                 </ul>
                 <div class="footer-socials">
-                    <a href="#"><i data-feather="linkedin" class="social-icon"></i></a>
+                    <a href="https://www.linkedin.com/company/solvenza-solutions/" target="_blank"><i
+                            data-feather="linkedin" class="social-icon"></i></a>
                     <a href="#"><i data-feather="instagram" class="social-icon"></i></a>
                     <a href="#"><i data-feather="mail" class="social-icon"></i></a>
                 </div>

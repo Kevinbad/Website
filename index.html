@@ -4,7 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solvenza Solutions | Elite Bilingual Talent</title>
+    <title>Solvenza Solutions | Elite Bilingual Talent & AI Automation</title>
+    <meta name="description"
+        content="Scale your business with Solvenza Solutions. Premium nearshore staffing integrated with custom AI automation for operational excellence.">
+    <meta name="keywords"
+        content="nearshore staffing, AI automation, bilingual talent, business scaling, offshoring, Solvenza Solutions">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://solvenza.com/">
+    <meta property="og:title" content="Solvenza Solutions | Elite Bilingual Talent & AI Automation">
+    <meta property="og:description"
+        content="Scale your business with Solvenza Solutions. Premium nearshore staffing integrated with custom AI automation.">
+    <meta property="og:image" content="https://solvenza.com/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://solvenza.com/">
+    <meta property="twitter:title" content="Solvenza Solutions | Elite Bilingual Talent & AI Automation">
+    <meta property="twitter:description"
+        content="Scale your business with Solvenza Solutions. Premium nearshore staffing integrated with custom AI automation.">
+    <meta property="twitter:image" content="https://solvenza.com/img/og-image.jpg">
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -17,15 +38,19 @@
     <!-- Header -->
     <header>
         <div class="container nav-container">
-            <a href="#" class="logo">Solvenza Solutions<span style="color: var(--color-gold);">.</span></a>
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Solvenza Solutions"></a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#" class="nav-link">About Us</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
                     <li><a href="services.html" class="nav-link">Our Services</a></li>
                     <li><a href="pricing.html" class="nav-link">Pricing</a></li>
                     <li><a href="careers.html" class="nav-link">Careers</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <i data-feather="menu"></i>
+            </div>
+
             <a href="contact.html" class="btn btn-primary">Start Delegating</a>
         </div>
     </header>
@@ -35,7 +60,7 @@
         <div class="container hero-grid">
 
             <!-- Left: Content -->
-            <div class="hero-content">
+            <div class="hero-content reveal">
                 <h1>Elite Talent Meets <br> <span class="text-script" style="font-size: 1.2em;">AI Automation</span>
                 </h1>
                 <p>Eliminate operational friction and maximize profitability with future-proof offshoring strategies.
@@ -61,12 +86,26 @@
                 </div>
             </div>
 
-            <!-- Right: Collage Visual -->
-            <div class="hero-collage">
-                <!-- Placeholders for Cut-Out Images -->
-                <div class="collage-img img-1"></div> <!-- Person 1 -->
-                <div class="collage-img img-2"></div> <!-- Person 2 -->
-                <div class="collage-img img-3"></div> <!-- Person 3 / Detail -->
+            <!-- Right: Holographic Professional - Option C -->
+            <div class="hero-visual reveal delay-100">
+                <div class="hologram-wrapper">
+                    <!-- The Professional Image -->
+                    <div class="hologram-image">
+                        <img src="img/hero_solvenza_new.png" alt="Elite Talent Meets AI Automation">
+                        <div class="scan-line"></div>
+                        <div class="hologram-grid"></div>
+                    </div>
+
+                    <!-- Floating Data Points -->
+                    <div class="holo-badge badge-top">
+                        <i data-feather="cpu"></i>
+                        <span>Synergy Verified</span>
+                    </div>
+                    <div class="holo-badge badge-bottom">
+                        <i data-feather="zap"></i>
+                        <span>Future Ready</span>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -121,8 +160,35 @@
         </div>
     </section>
 
+    <!-- Section 2: Why Solvenza (Value Prop) -->
+    <section class="value-prop reveal">
+        <div class="container value-grid">
+            <!-- Card 1 -->
+            <div class="value-card reveal">
+                <div class="card-icon"><i data-feather="cpu"></i></div>
+                <h3>AI-Integrated Talent</h3>
+                <p><strong>Work 4x Faster.</strong><br>Our professionals aren't just bilingual; they are trained in
+                    custom AI workflows to convert 8 hours of work into 2.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="value-card reveal delay-100">
+                <div class="card-icon"><i data-feather="globe"></i></div>
+                <h3>Nearshore Alignment</h3>
+                <p><strong>Seamless Integration.</strong><br>US time zones. US culture. No language barriers. Real-time
+                    collaboration in your Slack and daily standups.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="value-card reveal delay-200">
+                <div class="card-icon"><i data-feather="shield"></i></div>
+                <h3>Compliance & Payroll</h3>
+                <p><strong>Zero Liability.</strong><br>We handle all EOR liabilities, benefits, and local taxes. You get
+                    a single monthly invoice.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Section 3: Decision CTA -->
-    <section class="decision-section">
+    <section class="decision-section reveal">
         <div class="container decision-grid">
             <!-- Left: Text -->
             <div class="decision-content">
@@ -140,16 +206,14 @@
 
                 <div class="decision-buttons">
                     <a href="contact.html" class="btn btn-primary">Start Scaling</a>
-                    <a href="#" class="btn btn-outline">Calculate Savings</a>
+                    <a href="pricing.html" class="btn btn-outline">View Pricing</a>
                 </div>
             </div>
 
             <!-- Right: Image -->
             <div class="decision-image">
-                <!-- Placeholder for Team Image -->
-                <div class="placeholder-team-img">
-                    <span style="color: white; opacity: 0.8;">Team Photo Placeholder</span>
-                </div>
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop"
+                    alt="Elite Operations Team Collaborating" class="team-img">
             </div>
         </div>
     </section>
@@ -158,15 +222,16 @@
     <footer>
         <div class="container">
             <div class="footer-top">
-                <a href="#" class="footer-logo">Solvenza Solutions.</a>
+                <a href="index.html" class="footer-logo">Solvenza Solutions.</a>
                 <ul class="footer-nav">
-                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="about.html" class="footer-link">About Us</a></li>
                     <li><a href="services.html" class="footer-link">Our Services</a></li>
                     <li><a href="pricing.html" class="footer-link">Pricing</a></li>
                     <li><a href="careers.html" class="footer-link">Careers</a></li>
                 </ul>
                 <div class="footer-socials">
-                    <a href="#"><i data-feather="linkedin" class="social-icon"></i></a>
+                    <a href="https://www.linkedin.com/company/solvenza-solutions/" target="_blank"><i
+                            data-feather="linkedin" class="social-icon"></i></a>
                     <a href="#"><i data-feather="instagram" class="social-icon"></i></a>
                     <a href="#"><i data-feather="mail" class="social-icon"></i></a>
                 </div>

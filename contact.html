@@ -5,12 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start Delegating | Solvenza Solutions</title>
+    <meta name="description"
+        content="Ready to scale? Contact Solvenza Solutions to build your AI-augmented team today.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://solvenza.com/contact.html">
+    <meta property="og:title" content="Start Delegating | Solvenza Solutions">
+    <meta property="og:description"
+        content="Ready to scale? Contact Solvenza Solutions to build your AI-augmented team today.">
+    <meta property="og:image" content="https://solvenza.com/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://solvenza.com/contact.html">
+    <meta property="twitter:title" content="Start Delegating | Solvenza Solutions">
+    <meta property="twitter:description"
+        content="Ready to scale? Contact Solvenza Solutions to build your AI-augmented team today.">
+    <meta property="twitter:image" content="https://solvenza.com/img/og-image.jpg">
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // REPLACE WITH YOUR PUBLIC KEY FROM EMAILJS DASHBOARD
+            emailjs.init("YOUR_PUBLIC_KEY");
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -18,15 +47,19 @@
     <!-- Header -->
     <header>
         <div class="container nav-container">
-            <a href="index.html" class="logo">Solvenza Solutions<span style="color: var(--color-gold);">.</span></a>
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Solvenza Solutions"></a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#" class="nav-link">About Us</a></li>
-                    <li><a href="#" class="nav-link">Our Services</a></li>
-                    <li><a href="#" class="nav-link">Pricing</a></li>
-                    <li><a href="#" class="nav-link">Careers</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link">Our Services</a></li>
+                    <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+                    <li><a href="careers.html" class="nav-link">Careers</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle" id="mobile-menu-toggle">
+                <i data-feather="menu"></i>
+            </div>
+
             <a href="contact.html" class="btn btn-primary">Start Delegating</a>
         </div>
     </header>
@@ -41,43 +74,51 @@
                 </p>
             </div>
 
-            <form id="leadForm">
+            <form id="leadForm" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="08df60a9-1ee9-485a-926f-83b4d062a2ff">
+                <!-- Optional: Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                 <div class="form-grid">
                     <!-- Full Name -->
                     <div class="form-group">
                         <label class="form-label">Full Name *</label>
-                        <input type="text" class="form-input" placeholder="Jane Doe" required>
+                        <input type="text" name="user_name" class="form-input" placeholder="Jane Doe" required>
                     </div>
 
                     <!-- Work Email -->
                     <div class="form-group">
                         <label class="form-label">Work Email *</label>
-                        <input type="email" class="form-input" placeholder="jane@company.com" required>
+                        <input type="email" name="user_email" class="form-input" placeholder="jane@company.com"
+                            required>
                     </div>
 
                     <!-- Company Name -->
                     <div class="form-group">
                         <label class="form-label">Company Name *</label>
-                        <input type="text" class="form-input" placeholder="Acme Corp" required>
+                        <input type="text" name="company_name" class="form-input" placeholder="Acme Corp" required>
                     </div>
 
                     <!-- Niche -->
                     <div class="form-group">
                         <label class="form-label">Niche *</label>
-                        <input type="text" class="form-input" placeholder="e.g. SaaS, Real Estate" required>
+                        <input type="text" name="niche" class="form-input" placeholder="e.g. SaaS, Real Estate"
+                            required>
                     </div>
 
                     <!-- Phone Number -->
                     <div class="form-group full-width">
                         <label class="form-label">Phone Number *</label>
                         <div style="display: flex; gap: 12px;">
-                            <select class="form-select" style="width: 120px;">
+                            <select class="form-select" style="width: 120px;" name="country_code">
                                 <option value="+1">🇺🇸 +1</option>
                                 <option value="+44">🇬🇧 +44</option>
                                 <option value="+61">🇦🇺 +61</option>
                                 <option value="+1">🇨🇦 +1</option>
                             </select>
-                            <input type="tel" class="form-input" placeholder="(555) 123-4567" required>
+                            <input type="tel" name="phone_number" class="form-input" placeholder="(555) 123-4567"
+                                required>
                         </div>
                     </div>
 
@@ -89,7 +130,8 @@
                             <span id="vaCountDisplay" style="font-weight: 700; color: var(--color-charcoal);">1</span>
                         </div>
                         <div class="slider-container">
-                            <input type="range" class="slider-input" min="1" max="10" value="1" id="vaSlider">
+                            <input type="range" name="va_count" class="slider-input" min="1" max="10" value="1"
+                                id="vaSlider">
                         </div>
                     </div>
 
@@ -117,22 +159,22 @@
                         <label class="form-label">What do you need support with?</label>
                         <div class="checkbox-group">
                             <label class="checkbox-option">
-                                <input type="checkbox"> Admin General
+                                <input type="checkbox" name="support_needs" value="Admin General"> Admin General
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox"> Customer Support
+                                <input type="checkbox" name="support_needs" value="Customer Support"> Customer Support
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox"> Marketing
+                                <input type="checkbox" name="support_needs" value="Marketing"> Marketing
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox"> E-Commerce
+                                <input type="checkbox" name="support_needs" value="E-Commerce"> E-Commerce
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox"> Real Estate
+                                <input type="checkbox" name="support_needs" value="Real Estate"> Real Estate
                             </label>
                             <label class="checkbox-option">
-                                <input type="checkbox"> Other
+                                <input type="checkbox" name="support_needs" value="Other"> Other
                             </label>
                         </div>
                     </div>
@@ -140,7 +182,8 @@
                     <!-- Text Area -->
                     <div class="form-group full-width">
                         <label class="form-label">Message / Specific Needs</label>
-                        <textarea class="form-textarea" rows="4" placeholder="This field is optional"></textarea>
+                        <textarea class="form-textarea" name="message" rows="4"
+                            placeholder="This field is optional"></textarea>
                     </div>
 
                     <!-- Submit Button -->
@@ -158,13 +201,14 @@
             <div class="footer-top">
                 <a href="index.html" class="footer-logo">Solvenza Solutions.</a>
                 <ul class="footer-nav">
-                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="about.html" class="footer-link">About Us</a></li>
                     <li><a href="services.html" class="footer-link">Our Services</a></li>
                     <li><a href="pricing.html" class="footer-link">Pricing</a></li>
                     <li><a href="careers.html" class="footer-link">Careers</a></li>
                 </ul>
                 <div class="footer-socials">
-                    <a href="#"><i data-feather="linkedin" class="social-icon"></i></a>
+                    <a href="https://www.linkedin.com/company/solvenza-solutions/" target="_blank"><i
+                            data-feather="linkedin" class="social-icon"></i></a>
                     <a href="#"><i data-feather="instagram" class="social-icon"></i></a>
                     <a href="#"><i data-feather="mail" class="social-icon"></i></a>
                 </div>
