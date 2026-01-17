@@ -2130,3 +2130,203 @@ footer {
     /* Matched to Navbar Logo */
     width: auto;
 }
+
+/* =========================================
+   14. MOBILE RESPONSIVENESS FIXES (Consolidated)
+   ========================================= */
+@media (max-width: 768px) {
+
+    /* Container Padding */
+    .container {
+        padding: 0 20px;
+    }
+
+    .section-header h2 {
+        font-size: 32px;
+    }
+
+    /* Navbar */
+    .nav-container {
+        padding: 0 20px !important;
+    }
+
+    .logo img {
+        height: 100px;
+        /* Smaller logo on mobile */
+    }
+
+    /* Hero Section */
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        margin: 0 auto 30px;
+    }
+
+    .hero-footer {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .hero-visual {
+        height: auto;
+        min-height: 400px;
+    }
+
+    .hologram-wrapper {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* Features Grid */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    /* Ecosystem Section */
+    .ecosystem-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Custom Banner */
+    .custom-banner-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .banner-text-col p {
+        margin: 0 auto 32px;
+    }
+
+    .circle-img-cutout {
+        width: 280px;
+        height: 280px;
+    }
+
+    /* Dual Path */
+    .dual-path-cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* Pricing Section */
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1);
+        order: -1;
+        /* Show featured first on mobile if desired, or keep as is */
+    }
+
+    /* ROI Showcase */
+    .roi-showcase {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .roi-visuals {
+        flex-direction: column;
+    }
+
+    .metric-card.up,
+    .metric-card.down {
+        margin-top: 0;
+    }
+
+    /* Footer */
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-socials {
+        margin-left: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .footer-legal a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    /* Audit Section */
+    .audit-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .audit-content p {
+        margin: 0 auto 32px;
+    }
+
+    .placeholder-audit-img {
+        height: 300px;
+    }
+
+    /* About Page Mobile Fixes */
+    .mission-split,
+    .leadership-grid,
+    .stats-grid,
+    .value-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .manifesto-content h1 {
+        font-size: 36px;
+    }
+
+    .manifesto-content p {
+        font-size: 18px;
+    }
+
+    /* Careers Page Mobile Fixes */
+    .hero-split,
+    .culture-split,
+    .roles-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .avatar-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* Keep 3x3 for avatars but smaller */
+        gap: 10px;
+    }
+
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .avatar.center-avatar {
+        font-size: 24px;
+    }
+}
