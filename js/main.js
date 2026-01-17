@@ -46,6 +46,14 @@ const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
 if (menuToggle && navLinks) {
+    // Inject "Start Delegating" button for mobile
+    const desktopBtn = document.querySelector('.nav-container .btn-primary');
+    if (desktopBtn) {
+        const mobileBtn = document.createElement('li');
+        mobileBtn.innerHTML = `<a href="${desktopBtn.getAttribute('href')}" class="nav-link text-script" style="color: var(--color-gold); margin-top: 10px;">${desktopBtn.textContent}</a>`;
+        navLinks.appendChild(mobileBtn);
+    }
+
     menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('active');
 

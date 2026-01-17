@@ -2148,11 +2148,19 @@ footer {
     /* Navbar */
     .nav-container {
         padding: 0 20px !important;
+        justify-content: space-between;
+    }
+
+    /* Hide Desktop CTA on Mobile */
+    .nav-container .btn-primary {
+        display: none;
     }
 
     .logo img {
-        height: 100px;
+        height: 60px;
+        /* Reduced to 60px */
         /* Smaller logo on mobile */
+        width: auto;
     }
 
     /* Hero Section */
