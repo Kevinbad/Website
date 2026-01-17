@@ -2113,3 +2113,15 @@ footer {
     color: var(--color-charcoal);
     font-weight: 700;
 }
+
+/* Footer Logo matching Navbar (Large) */
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+.footer-logo img {
+    height: 150px;
+    /* Matched to Navbar Logo */
+    width: auto;
+}
